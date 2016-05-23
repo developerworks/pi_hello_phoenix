@@ -15,3 +15,6 @@ erl_crash.dump
 # variables.
 /config/prod.secret.exs
 /rel
+pi_hello_phoenix.fw
+pi_hello_phoenix.img
+pi_hello_phoenix.sqlite3

@@ -5,14 +5,6 @@
 # is restricted to this project.
 use Mix.Config
 
-config :pi_hello_phoenix, PiHelloPhoenix.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  database: "pi_hello_phoenix_repo",
-  username: "user",
-  password: "pass",
-  hostname: "localhost"
-
-
 # Configures the endpoint
 config :pi_hello_phoenix, PiHelloPhoenix.Endpoint,
   url: [host: "localhost"],

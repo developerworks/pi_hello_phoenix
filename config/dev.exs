@@ -42,6 +42,6 @@ config :phoenix, :stacktrace_depth, 20
 #   hostname: "localhost",
 #   pool_size: 10
 
-config :pi_hello_phoenix, Repo,
+config :pi_hello_phoenix, PiHelloPhoenix.Repo,
   adapter: Sqlite.Ecto,
-  database: "ecto_simple.sqlite3"
+  database: "pi_hello_phoenix.sqlite3"

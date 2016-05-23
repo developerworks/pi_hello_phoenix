@@ -19,7 +19,7 @@ defmodule PiHelloPhoenix.Mixfile do
   def application do
     [mod: {PiHelloPhoenix, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :nerves_networking]]
+                    :phoenix_ecto, :sqlite_ecto, :nerves, :nerves_networking]]
   end
 
   # Specifies which paths to compile per environment.
@@ -39,7 +39,8 @@ defmodule PiHelloPhoenix.Mixfile do
      {:cowboy, "~> 1.0"},
      {:exrm, "~> 1.0"},
      {:nerves, github: "nerves-project/nerves"},
-     {:nerves_networking, github: "nerves-project/nerves_networking"}
+     {:nerves_networking, github: "nerves-project/nerves_networking"},
+     {:exsync, "~> 0.1.2", only: [:dev]}
    ]
   end
 
